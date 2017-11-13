@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.me.dmsoundboard.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:background="@drawable/backgroundgear"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="326dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:onClick="startAudio"
+                android:text="Start"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"
+                android:onClick="pauseAudio"
+                android:text="PAUSE"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <GridLayout
+
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="Thunder" />
+
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="CHAINS" />
+
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="0"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="bird" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="clock" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="demongirl" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="1"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="hell" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="door" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="water" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_row="2"
+                android:layout_rowWeight="1"
+                android:alpha=".5"
+                android:onClick="soundPicker"
+                android:text="Vines" />
+
+        </GridLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
